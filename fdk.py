@@ -4,13 +4,13 @@ amely True értékkel tér vissza, ha a paraméterként átvett listaelemek
 érték False! A program tartalmazza a függvény hívását is"""
 
 def paros_e(lista):
-    paros = True
+    paros = False
     for szam in lista:
-        if szam % 2 != 0:
-            paros = False
+        if szam % 2 == 0:
+            paros = True
     return paros
 
-lista = [4, 2, 4, 3, 2]
+lista = [1, 3, 5, 3, 1]
 
 print(paros_e(lista))
 
